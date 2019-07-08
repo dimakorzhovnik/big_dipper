@@ -48,7 +48,7 @@ export default class MissedBlocks extends Component{
         }
         else{
             if (this.props.validatorExist){
-                return <div>
+                return <div id='missedBlocks'>
                     <Helmet>
                         <title>{ this.props.validator.description.moniker } - Missed Blocks | The Big Dipper</title>
                         <meta name="description" content={"The missed blocks and precommits of "+this.props.validator.description.moniker} />

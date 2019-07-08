@@ -418,6 +418,19 @@
   100% {
     opacity: 0; } }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3ab794dc !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #3ab793 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #3ab793 !important;
+}
+
 /* @media screen and (max-width: 767px) {
   .flip-clock-wrapper ul { height: 50px; line-height: 50px; }
   .flip-clock-wrapper ul li a div.up:after { top: 24px; }
