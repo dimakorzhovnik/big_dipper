@@ -54,6 +54,12 @@ export default class VotingPower extends Component{
                     ]
                 },
                 options:{
+                    legend: {
+                        labels: {
+                            fontColor: "#fff",
+                            // fontSize: 18
+                        }
+                    },
                     tooltips: {
                         callbacks: {
                             label: function(tooltipItem, data) {
@@ -65,11 +71,17 @@ export default class VotingPower extends Component{
                     scales: {
                         xAxes: [{
                             ticks: {
+                                fontColor: "#fff",
                                 beginAtZero:true,
                                 userCallback: function(value, index, values) {
                                     // Convert the number to a string and splite the string every 3 charaters from the end
                                     return numbro(value).format("0,0");
                                 }
+                            }
+                        }],
+                        yAxes: [{
+                            ticks: {
+                                fontColor: "#fff",
                             }
                         }]
                     }
