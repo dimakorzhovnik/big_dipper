@@ -150,6 +150,11 @@ export default class Chart extends Component{
                     }
                 },
                 optionsTime: {
+                    legend: {
+                        labels: {
+                            fontColor: "white",
+                        }
+                    },
                     scales: {
                         xAxes: [
                             {
@@ -161,7 +166,8 @@ export default class Chart extends Component{
                             type: 'linear',
                             position: 'right',
                             ticks: {
-                                stepSize: 1
+                                stepSize: 1,
+                                fontColor: "white",
                             }
                         }, {
                             id: 'Time',
@@ -169,6 +175,7 @@ export default class Chart extends Component{
                             position: 'left',
                             ticks: {
                             // Include a dollar sign in the ticks
+                                fontColor: "white",
                                 callback: function(value, index, values) {
                                     return value+'s';
                                 }

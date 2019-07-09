@@ -46,6 +46,12 @@ export default class TwentyEighty extends Component{
                     ]
                 },
                 options:{
+                    legend: {
+                        labels: {
+                            fontColor: "white",
+                            // fontSize: 18
+                        }
+                    },
                     tooltips: {
                         callbacks: {
                             label: function(tooltipItem, data) {
